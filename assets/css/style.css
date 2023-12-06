@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;600&display=swap');
+
+@media(min-width: 1115px){
+    *{
+        padding: 0%;
+        margin: 0%;
+    }
+    body{
+        font-family: 'Barlow Condensed', sans-serif;
+    }
+
+    main{
+        margin-top: 60px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+    }
+    nav{
+        width: 100%;
+        z-index: 100;
+        position: fixed;
+        font-family: 'Barlow Condensed', sans-serif;
+        height: 50px;
+        margin-bottom: 3%;
+        background-color: black;
+        color: whitesmoke;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    button{
+        background-color: rgb(49, 49, 49);
+        color: white;
+        margin: 3px;
+        width: 60px;
+        height: 30px;
+        border-radius: 3px;
+        text-align: center;
+    }
+    
+    button:hover{
+        background-color: whitesmoke;
+        color: black;
+        width: 60px;
+        height: 30px;
+        border-radius: 3px;
+        text-align: center;
+    }
+    button:disabled{
+        background-color: lightgrey;
+        color: grey;
+        border: none;
+    }
+    #tarjetas{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+        height: fit-content;
+    }
+    
+    .card{
+        position: relative;
+        width: 25%;
+        margin: 10px;
+        background-color: rgb(255, 255, 255);
+        color: black;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: 0px 0px 5px 2px #c5c5c5;
+        border: solid 1px rgba(128, 128, 128, 0.356);
+        border-radius: 5px;
+    }
+    .card img{
+        width: 70%;
+        height: auto;
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
+    .card:hover{
+        background-color: rgb(226, 226, 226);
+        box-shadow: 0px 0px 15px 2px #747373;
+    
+    }
+    .card img:hover{
+        -webkit-filter: grayscale(1);
+        filter: gray;
+        filter: grayscale(1);
+    }
+    footer{
+        display: flex;
+        background-color: black;
+        color: white;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .entrePag{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 1%;
+    
+    }
+    
+    #themeChange{
+        display: flex;
+        background: transparent;
+        border: none;
+        margin-bottom: 3%;
+   }
+}
